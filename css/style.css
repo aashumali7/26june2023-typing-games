@@ -1,0 +1,39 @@
+.a_tbdr{
+    border:1px dashed #000;
+}
+.a_cont{
+    height: 750px;
+
+}
+.a_mysection{
+    transform: scale(0.7,0.7);
+    border: 10px solid #0DCAF0 !important;
+
+}
+.a_hand{
+     height:300px;
+
+}
+.a_h33{
+    height: 250px;
+}
+.a_1{
+   width: 48px;
+   height: 46px;
+   border-style: outset;
+   box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.8);
+   
+}
+.a_active{
+    transform: translate(2px,2px);
+    box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.8);
+}
+.a_circle{
+    height: 25px;
+    width: 25px;
+}
+.a_left_pinky{
+    left: 215px;
+    top: 85px;
+    z-index: 1001;
+}
