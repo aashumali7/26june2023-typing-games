@@ -47,7 +47,7 @@ let playsound =()=>{
        // keypress sound play 
        document.addEventListener('keypress',(e)=>{
         console.log('->',e.keyCode);
-      if(e.keyCode == 97){
+        if(e.keyCode == 97){
         let a = document.querySelector('.a_a');
       console.log(a.classList.add('a_active'));
        
@@ -84,6 +84,232 @@ let playsound =()=>{
        
         document.querySelector('.l_ring').style.display = 'block';
       }
+         
+      if(e.keyCode == 101){
+        let a = document.querySelector('.a_e');
+      console.log(a.classList.add('a_active'));
+       
+        document.querySelector('.l_middle').style.display = 'block';
+      }
+      if(e.keyCode == 100){
+        let a = document.querySelector('.a_d');
+      console.log(a.classList.add('a_active'));
+       
+        document.querySelector('.l_middle').style.display = 'block';
+      }
+      if(e.keyCode == 99){
+        let a = document.querySelector('.a_c');
+      console.log(a.classList.add('a_active'));
+       
+        document.querySelector('.l_middle').style.display = 'block';
+      }
+
+      if(e.keyCode == 114){
+        let a = document.querySelector('.a_r');
+      console.log(a.classList.add('a_active'));
+       
+        document.querySelector('.l_middle').style.display = 'block';
+      }
+      if(e.keyCode == 102){
+        let a = document.querySelector('.a_f');
+      console.log(a.classList.add('a_active'));
+       
+        document.querySelector('.l_middle').style.display = 'block';
+      }
+      if(e.keyCode == 118){
+        let a = document.querySelector('.a_v');
+      console.log(a.classList.add('a_active'));
+       
+        document.querySelector('.l_middle').style.display = 'block';
+      }
+
+      if(e.keyCode == 116){
+        let a = document.querySelector('.a_t');
+      console.log(a.classList.add('a_active'));
+       
+        document.querySelector('.l_index').style.display = 'block';
+      }
+      if(e.keyCode == 103){
+        let a = document.querySelector('.a_g');
+      console.log(a.classList.add('a_active'));
+       
+        document.querySelector('.l_index').style.display = 'block';
+      }
+      if(e.keyCode == 98){
+        let a = document.querySelector('.a_b');
+      console.log(a.classList.add('a_active'));
+       
+        document.querySelector('.l_index').style.display = 'block';
+      }
+
+      if(e.keyCode == 121){
+        let a = document.querySelector('.a_y');
+      console.log(a.classList.add('a_active'));
+       
+        document.querySelector('.r_index').style.display = 'block';
+      }
+      if(e.keyCode == 104){
+        let a = document.querySelector('.a_h');
+      console.log(a.classList.add('a_active'));
+       
+        document.querySelector('.r_index').style.display = 'block';
+      }
+      if(e.keyCode == 110){
+        let a = document.querySelector('.a_n');
+      console.log(a.classList.add('a_active'));
+       
+        document.querySelector('.r_index').style.display = 'block';
+      }
+ 
+      if(e.keyCode == 117){
+        let a = document.querySelector('.a_u');
+      console.log(a.classList.add('a_active'));
+       
+        document.querySelector('.r_middle').style.display = 'block';
+      }
+      if(e.keyCode == 106){
+        let a = document.querySelector('.a_j');
+      console.log(a.classList.add('a_active'));
+       
+        document.querySelector('.r_middle').style.display = 'block';
+      }
+      if(e.keyCode == 109){
+        let a = document.querySelector('.a_m');
+      console.log(a.classList.add('a_active'));
+       
+        document.querySelector('.r_middle').style.display = 'block';
+      }
+
+      if(e.keyCode == 105){
+        let a = document.querySelector('.a_i');
+      console.log(a.classList.add('a_active'));
+       
+        document.querySelector('.r_index').style.display = 'block';
+      }
+      if(e.keyCode == 107){
+        let a = document.querySelector('.a_k');
+      console.log(a.classList.add('a_active'));
+       
+        document.querySelector('.r_index').style.display = 'block';
+      }
+      if(e.keyCode == 44){
+        let a = document.querySelector('.a_11');
+      console.log(a.classList.add('a_active'));
+       
+        document.querySelector('.r_index').style.display = 'block';
+      }
+
+      if(e.keyCode == 111){
+        let a = document.querySelector('.a_o');
+      console.log(a.classList.add('a_active'));
+       
+        document.querySelector('.r_pinky').style.display = 'block';
+      }
+      if(e.keyCode == 108){
+        let a = document.querySelector('.a_l');
+      console.log(a.classList.add('a_active'));
+       
+        document.querySelector('.r_pinky').style.display = 'block';
+      }
+      if(e.keyCode == 46){
+        let a = document.querySelector('.a_22');
+      console.log(a.classList.add('a_active'));
+       
+        document.querySelector('.r_pinky').style.display = 'block';
+      }
+
+      if(e.keyCode == 112){
+        let a = document.querySelector('.a_p');
+      console.log(a.classList.add('a_active'));
+       
+        document.querySelector('.r_pinky').style.display = 'block';
+      }
+
+        if(e.keyCode == 32){
+        let a = document.querySelector('.a_space');
+      console.log(a.classList.add('a_active'));
+       
+        document.querySelector('.r_thumb').style.display = 'block';
+      }
+
+      if(e.keyCode == 49){
+        let a = document.querySelector('.a_11');
+      console.log(a.classList.add('a_active'));
+       
+        document.querySelector('.l_middle').style.display = 'block';
+      }
+
+      if(e.keyCode == 50){
+        let a = document.querySelector('.a_22');
+      console.log(a.classList.add('a_active'));
+       
+        document.querySelector('.l_middle').style.display = 'block';
+      }
+
+      if(e.keyCode == 51){
+        let a = document.querySelector('.a_33');
+      console.log(a.classList.add('a_active'));
+       
+        document.querySelector('.l_index').style.display = 'block';
+      }
+
+
+      if(e.keyCode == 52){
+        let a = document.querySelector('.a_44');
+      console.log(a.classList.add('a_active'));
+       
+        document.querySelector('.l_index').style.display = 'block';
+      }
+
+      if(e.keyCode == 53){
+        let a = document.querySelector('.a_55');
+      console.log(a.classList.add('a_active'));
+       
+        document.querySelector('.l_index').style.display = 'block';
+      }
+
+      if(e.keyCode == 54){
+        let a = document.querySelector('.a_66');
+      console.log(a.classList.add('a_active'));
+       
+        document.querySelector('.r_index').style.display = 'block';
+      }
+
+      if(e.keyCode == 55){
+        let a = document.querySelector('.a_77');
+      console.log(a.classList.add('a_active'));
+       
+        document.querySelector('.r_index').style.display = 'block';
+      }
+
+      if(e.keyCode == 56){
+        let a = document.querySelector('.a_88');
+      console.log(a.classList.add('a_active'));
+       
+        document.querySelector('.r_index').style.display = 'block';
+      }
+
+      if(e.keyCode == 57){
+        let a = document.querySelector('.a_99');
+      console.log(a.classList.add('a_active'));
+       
+        document.querySelector('.r_middle').style.display = 'block';
+      }
+
+      if(e.keyCode == 48){
+        let a = document.querySelector('.a_00');
+      console.log(a.classList.add('a_active'));
+       
+        document.querySelector('.r_middle').style.display = 'block';
+      }
+
+      if(e.keyCode == 8){
+        let a = document.querySelector('.b_11');
+      console.log(a.classList.add('a_active'));
+       
+        document.querySelector('.r_ring').style.display = 'block';
+      }
+
 
         playsound();
        })
