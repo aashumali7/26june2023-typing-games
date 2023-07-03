@@ -3,11 +3,13 @@ let saveRegistrationInfo =()=>{
           // object.method
     let fn = document.getElementById("first_name").value;
     let ln = document.getElementById("last_name").value;
+    let dur = document.querySelector(".a_myselect").value;
 
     console.log(fn);
     console.log(ln);
     window.localStorage.setItem('first_name',fn);
     window.localStorage.setItem('last_name',ln);
+    window.localStorage.setItem('duration',dur);
      // page reload
      window.location.reload();
 }
@@ -22,6 +24,38 @@ let playsound =()=>{
     let at =document.querySelector('.a_audio');
     at.play();
 }
+
+let start = ()=>{
+  // built -in function 
+        // set the date we're counting down to 
+        var nextTime = new Date().getTime();
+        nextTime = new Date(nextTime + (localStorage.getItem('duration')*60* 1000)); // add 0ne hour
+
+        const dateTime = new Date( nextTime);
+
+          const unixTimestamp = Math.floor(dateTime.getTime() / 1000)*1000;
+
+          setInterval(function(){
+          // get today's date and time 
+          var now = new Date().getTime();
+          // console.log('Next Time',unixTimestamp);
+          // console.log('Current Time',now);
+
+           var distance = unixTimestamp - now;
+
+           var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+           var seconds = Math.floor((distance % (1000 * 60 )) / 1000);
+
+           document.querySelector(".a_duration").innerHTML = minutes + "m " + seconds + "s ";
+
+           if(distance < 0) {
+            clearInterval(x);
+            document.querySelector(".a_duration").innerHTML = "EXPIRED";
+           }
+
+        },1000)
+}
+
 // ()(); IIFE
 (()=>{
     let fn = window.localStorage.getItem('first_name');
@@ -303,15 +337,14 @@ let playsound =()=>{
         document.querySelector('.r_middle').style.display = 'block';
       }
 
-      if(e.keyCode == 8){
-        let a = document.querySelector('.b_11');
+      if(e.keyCode == 88){
+        let a = document.querySelector('.a_x');
       console.log(a.classList.add('a_active'));
        
-        document.querySelector('.r_ring').style.display = 'block';
+        document.querySelector('.l_ring').style.display = 'block';
       }
 
-
-        playsound();
+      playsound();
        })
        document.addEventListener('keyup',(e)=>{
         console.log(e);
@@ -329,7 +362,25 @@ let playsound =()=>{
 
        // document.querySelector('.a_left_pinky').style.display = 'none';
        })
-      
+
+       /*
+         for (expression 1; condition; increment++/decrement) {
+          // code block to be executed
+         }
+       */
+         var o = '';
+         for(var i=1; i<=60;i++){
+              o = o + `<option value="${i}">${i}</option>`;
+            
+         }
+
+         console.log(o);
+        console.log( document.querySelector('.a_myselect'));
+        document.querySelector('.a_myselect').innerHTML = o;
+
+        document.querySelector('.a_duration').innerHTML = localStorage.getItem('duration') === null ?'':localStorage.getItem('duration') +':00';
+
+        
 })();
 
-// IIFE 
+// ()(); IIFE 
