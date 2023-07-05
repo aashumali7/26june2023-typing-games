@@ -57,8 +57,10 @@ let start = ()=>{
 }
 
 // ()(); IIFE
+// onpage load
 (()=>{
-    let fn = window.localStorage.getItem('first_name');
+    let currentCharacaterPosition=0;
+   let fn = window.localStorage.getItem('first_name');
     let ln = window.localStorage.getItem('last_name');
   console.log('page loaded successfully');
   // get a refrence to the modal element 
@@ -227,10 +229,10 @@ let start = ()=>{
         document.querySelector('.r_index').style.display = 'block';
       }
       if(e.keyCode == 44){
-        let a = document.querySelector('.a_11');
+        let a = document.querySelector('.a_111');
       console.log(a.classList.add('a_active'));
        
-        document.querySelector('.r_index').style.display = 'block';
+        document.querySelector('.r_middle').style.display = 'block';
       }
 
       if(e.keyCode == 111){
@@ -246,10 +248,10 @@ let start = ()=>{
         document.querySelector('.r_pinky').style.display = 'block';
       }
       if(e.keyCode == 46){
-        let a = document.querySelector('.a_22');
+        let a = document.querySelector('.a_222');
       console.log(a.classList.add('a_active'));
        
-        document.querySelector('.r_pinky').style.display = 'block';
+        document.querySelector('.r_ring').style.display = 'block';
       }
 
       if(e.keyCode == 112){
@@ -360,6 +362,9 @@ let start = ()=>{
             elements[i].style.display="none";
         } 
 
+        currentCharacaterPosition = currentCharacaterPosition + 1;
+        console.log(currentCharacaterPosition)
+
        // document.querySelector('.a_left_pinky').style.display = 'none';
        })
 
@@ -379,6 +384,32 @@ let start = ()=>{
         document.querySelector('.a_myselect').innerHTML = o;
 
         document.querySelector('.a_duration').innerHTML = localStorage.getItem('duration') === null ?'':localStorage.getItem('duration') +':00';
+
+      let story = `This is a story from Panchatantra A monkey lived on a berry tree on the River Bank. Once he saw a crocodile under the tree who looked hungry and tired. He gave the crocodile some berries, the crocodile thanked the monkey and became one of his friends. 
+      The monkey would give berries to the crocodile every day. One day the monkey even gave the crocodile extra berries to take to his wife His wife enjoyed the berries but told her husband that she wanted to eat the monkey's heart. She was a wicked and cunning woman. The crocodile was upset, but he decided that he needed to make his wife happy.
+      On the next day, the crocodile went to the monkey and said that his wife had called him for dinner. The crocodile carried the monkey on his back across the river. He told this monkey his wife's plan. 
+      The monkey had to think quickly if he wanted to save himself. He told the crocodile that he left his heart at on the berry tree and that they needed to return.
+      On reaching the monkey climbed the tree and spoke. "I'm not getting down; you betrayed my trust and that means our friendship is over
+      A monkey lived on a berry tree on the River Bank. Once he saw a crocodile under the tree who looked hungry and tired. He gave the crocodile some berries, the crocodile thanked the monkey and became one of his friends The monkey would give berries to the crocodile every day. One day the monkey even gave the crocodile extra berries to take to his wife.
+      His wife enjoyed the berries but told her husband that she wanted to eat the monkey's heart. She was a wicked and cunning woman. The crocodile was upset, but he decided that he needed to make his wife happy.
+      On the next day, the crocodile went to the monkey and said that his wife had called him for dinner. The crocodile carried the monkey on his back across the river. He told this monkey his wife's plan. 
+      The monkey had to think quickly if he wanted to save himself. He told the crocodile that he left his heart at on the berry tree and that they needed to return.
+      On reaching the monkey climbed the tree and spoke. "I'm not getting down; you betrayed my trust and that means our friendship `
+
+
+      console.log();
+      let x = story.split(' ');
+
+      // function chaining...
+      console.log(x.slice(0,15).join(' '));
+
+      let content = x.slice(0,16).join(' ')
+
+      //access the dom element
+      document.querySelector('.a_content').innerHTML = content
+
+
+        
 
         
 })();
